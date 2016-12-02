@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="CS 254 Web UI">
+    <meta name="author" content="Luke HIggott">
+
+    <title>Weather Warning</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/custom/bootstrap.min.css" rel="stylesheet">
+
+    <link type="text/css" property='stylesheet' href="css/bootstrap-timepicker.min.css" />
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Luke's Custom Imported CSS -->
+    <link href="https://dl.dropboxusercontent.com/u/67348262/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="header">
+</div>
+<div id="content">
+    <h1>{% name %} Profile</h2>
+    <p>Update your settings for your alerts. Don't forget to click submit!</p>
+    <br />
+    <div style="margin:auto;">
+        <form method="POST" style="margin:auto;">
+            <div class="row">
+                <label class="col-xs-4 control-label" for="fname">First Name:</label>
+                <div class="col-xs-4">
+                    <input id="fname" type="text" name="fname" class="form-control input-xs" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-xs-4 control-label" for="lname">Last Name:</label>
+                <div class="col-xs-4">
+                    <input id="lname" type="text" name="lname" class="form-control input-xs" required/>
+                </div>
+            </div>
+           <div class="row">
+                <label class="col-xs-4 control-label" for="temp">Temperature to Alert:</label>
+                <div class="col-xs-4">
+                    <input id="temp" type="text" name="temp" class="form-control input-xs" required/>
+                </div>
+            </div>
+           <div class="row">
+                <label class="col-xs-4 control-label" for="time">Alerts Time:</label>
+                <div class="col-xs-4">
+                    <input id="time" type="text" name="time" class="form-control input-xs" required/>
+                </div>
+            </div>
+           <div class="row">
+                <label class="col-xs-4 control-label" for="city">City:</label>
+                <div class="col-xs-4">
+                    <input id="city" type="text" name="city" class="form-control input-xs" required/>
+                </div>
+            </div>
+           <div class="row">
+                <label class="col-xs-4 control-label" for="temp">State:</label>
+                <div class="col-xs-4">
+                    <input id="state" type="text" name="state" class="form-control input-xs" required/>
+                </div>
+            </div>
+            <br />
+            <div style="text-align: center;"><input type="submit" name="submit" value="Submit!" required/></div>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <div id="footercontent">
+        <strong>Luke Higgott</strong><br />
+        <p style="color:white;">luke.higgott@csu.fullerton.edu  |  (310) 367-5459<p>
+    </div>
+</div>
+</body>
+</html>
